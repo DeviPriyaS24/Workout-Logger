@@ -1,0 +1,130 @@
+/* Landing page styles */
+.main {
+  background-image: url("https://4kwallpapers.com/images/wallpapers/workout-limitless-endurance-gym-colorful-smoke-1920x1200-929.jpg");
+  background-size: 100% 100%;
+  min-height: 90vh;
+  border-radius: 30px;
+}
+
+.main-h1 {
+  color: rgb(6, 99, 130);
+  font-size: 100px;
+  font-weight: bolder;
+  font-style: italic;
+  text-shadow: 2px 4px 6px black;
+}
+
+.main-p {
+  color: rgb(107, 167, 187);
+  font-size: 30px;
+  font-weight: bolder;
+  text-shadow: 2px 4px 6px black;
+}
+
+.sub {
+  padding: 4rem 2rem;
+  background-color: #f9fafb; 
+  text-align: center;
+}
+
+.sub h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.sub p {
+  font-size: 1.1rem;
+  color: #475569; 
+  margin-bottom: 2rem;
+}
+
+dl {
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+}
+
+dt {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+dt i {
+  color: #3b82f6; 
+  font-size: 1.2rem;
+}
+
+dd {
+  font-size: 1rem;
+  color: #334155;
+  margin-left: 1.8rem;
+  line-height: 1.6;
+}
+
+.scheduled-card {
+  height: 100%; /* Allow it to grow with content, or set fixed height below */
+  min-height: 400px; /* Or use exact height: 400px */ 
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: #1e3a8a;
+}
+
+.scheduled-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.scheduled-heading {
+  font-size: 2.5rem;
+  color: #2c3e50; /* dark blue */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* add plan */
+.addPlan-div{
+  min-height: 30vh;
+  box-shadow: 2px 4px 6px;
+  border-radius: 30px;
+  background-color: #b7c6f6;
+}
+
+.completedses-div{
+  min-height: 35vh;
+}
+
+/* completed sessions */
+.completedses-div {
+  background-color: #f5f9ff; /* Lighter blue background */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.completed-heading {
+  font-weight: bold;
+  color: #007bff; /* Bootstrap's primary blue color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table thead th {
+  background-color: #cce5ff; /* Lighter blue background for header */
+  color: #004085; /* Darker blue text color */
+  text-align: center;
+}
+
+.table tbody td {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+}
+

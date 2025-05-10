@@ -1,0 +1,40 @@
+{
+  "allPlans": [
+    {
+      "id": "bc79",
+      "exercise": "Jogging",
+      "duration": "2.3",
+      "calories": "100",
+      "date": "2025-05-10",
+      "notes": "Go ahead, You are doing greate"
+    },
+    {
+      "id": "eb9c",
+      "exercise": "Jogging",
+      "duration": "2",
+      "calories": "100",
+      "date": "2025-05-30",
+      "notes": "Jogging"
+    },
+    {
+      "id": "3d37",
+      "exercise": "Plank",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/hdm119918mh15842-1545237096.png?crop=0.668xw:1.00xh;0.117xw,0&resize=1200:*",
+      "duration": "2",
+      "calories": "100",
+      "date": "2025-05-17",
+      "notes": "Beat it",
+      "completed": true
+    },
+    {
+      "id": "0586",
+      "exercise": "Sit ups",
+      "img": "https://www.fitpaa.com/wp-content/uploads/2023/08/Untitled-design-2023-08-15T155759.641-jpg.webp",
+      "duration": "30",
+      "calories": "60",
+      "date": "2025-05-17",
+      "notes": "Sit up workout for 30 minutes",
+      "completed": true
+    }
+  ]
+}
