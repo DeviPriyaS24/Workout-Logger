@@ -1,12 +1,12 @@
-import React from 'react'
-import AddPlans from '../components/AddPlans'
+import React from "react";
+import AddPlans from "../components/AddPlans";
 
 const Home = () => {
   return (
     <div>
-        <AddPlans/>
+      <AddPlans />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

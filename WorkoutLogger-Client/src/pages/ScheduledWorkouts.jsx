@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
-import { deletePlansApi, getPlansApi, markAsCompletedApi } from "../services/allAPI";
-
+import {
+  deletePlansApi,
+  getPlansApi,
+  markAsCompletedApi,
+} from "../services/allAPI";
+import EditPlans from "../components/EditPlans";
 
 const ScheduledWorkouts = () => {
   const [scheduledPlansData, setScheduledPlansData] = useState([]);
 
   const [deletePlanData, setDeletePlanData] = useState([]);
+
+  const [showEditModal, setShowEditModal] = useState(false);
+
+  const [selectedPlan, setSelectedPlan] = useState(null);
 
   useEffect(() => {
     getScheduledPlans();
@@ -25,11 +33,16 @@ const ScheduledWorkouts = () => {
     console.log(result.data);
   };
 
-  const markAsCompleted = async(planId)=>{
+  const markAsCompleted = async (planId) => {
     let result = await markAsCompletedApi(planId);
     console.log(result.data);
-    getScheduledPlans()
-  }
+    getScheduledPlans();
+  };
+
+  const handleEdit = (plan) => {
+    setSelectedPlan(plan);
+    setShowEditModal(true);
+  };
 
   return (
     <>
@@ -45,7 +58,7 @@ const ScheduledWorkouts = () => {
             <Card
               style={{
                 width: "100%",
-                backgroundColor: "#a8e6cf",
+                backgroundColor: "#ADD8E6",
                 color: "grey",
                 fontWeight: "bold",
               }}
@@ -58,7 +71,7 @@ const ScheduledWorkouts = () => {
                 className="rounded"
               />
               <Card.Body>
-                <Card.Title className="fw-bolder fs-4 text-center text-success">
+                <Card.Title className="fw-bolder fs-4 text-center text-info">
                   {eachPlans.exercise}
                 </Card.Title>
                 <Card.Text>Duration(mins): {eachPlans.duration}</Card.Text>
@@ -71,6 +84,7 @@ const ScheduledWorkouts = () => {
                   <Button
                     className="btn"
                     style={{ backgroundColor: " #ccffcc" }}
+                    onClick={() => handleEdit(eachPlans)}
                   >
                     <i class="fa-solid fa-file-pen"></i> Edit
                   </Button>
@@ -83,8 +97,12 @@ const ScheduledWorkouts = () => {
                   </Button>
                 </div>
                 <div className="d-flex justify-content-center mt-2">
-                  <Button onClick={()=>markAsCompleted(eachPlans?.id)} className="btn bg-secondary">
-                    <i class="fa-regular fa-square-check"></i> {eachPlans.completed ? "Completed" : "Mark as Completed"}
+                  <Button
+                    onClick={() => markAsCompleted(eachPlans?.id)}
+                    className="btn bg-secondary"
+                  >
+                    <i class="fa-regular fa-square-check"></i>{" "}
+                    {eachPlans.completed ? "Completed" : "Mark as Completed"}
                   </Button>
                 </div>
               </Card.Body>
@@ -92,6 +110,12 @@ const ScheduledWorkouts = () => {
           </div>
         ))}
       </div>
+      <EditPlans
+        show={showEditModal}
+        handleClose={() => setShowEditModal(false)}
+        selectedPlan={selectedPlan}
+        refreshList={getScheduledPlans}
+      />
     </>
   );
 };

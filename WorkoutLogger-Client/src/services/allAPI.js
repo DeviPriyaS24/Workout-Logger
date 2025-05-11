@@ -19,3 +19,7 @@ export const markAsCompletedApi = async (planId)=>{
 export const getCompletedPlansApi = async ()=>{
     return await ApiConfig('get','/allPlans',"")
 }
+
+export const editPlanApi = async(planId,updateData)=>{
+    return await ApiConfig('put',`/allPlans/${planId}`,updateData)
+}

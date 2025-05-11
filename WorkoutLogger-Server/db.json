@@ -1,40 +1,24 @@
 {
   "allPlans": [
     {
-      "id": "bc79",
-      "exercise": "Jogging",
-      "duration": "2.3",
-      "calories": "100",
-      "date": "2025-05-10",
-      "notes": "Go ahead, You are doing greate"
-    },
-    {
-      "id": "eb9c",
-      "exercise": "Jogging",
-      "duration": "2",
-      "calories": "100",
-      "date": "2025-05-30",
-      "notes": "Jogging"
-    },
-    {
-      "id": "3d37",
-      "exercise": "Plank",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/hdm119918mh15842-1545237096.png?crop=0.668xw:1.00xh;0.117xw,0&resize=1200:*",
-      "duration": "2",
-      "calories": "100",
-      "date": "2025-05-17",
-      "notes": "Beat it",
-      "completed": true
-    },
-    {
-      "id": "0586",
-      "exercise": "Sit ups",
-      "img": "https://www.fitpaa.com/wp-content/uploads/2023/08/Untitled-design-2023-08-15T155759.641-jpg.webp",
+      "id": "770a",
+      "exercise": "Push up",
+      "img": "https://images.ctfassets.net/0k812o62ndtw/1CBzJX5xc13JBSRgeLE4ap/f13a111f6b89e67d3a8a176ccb1491bd/SWEAT_Again_210423_Kelsey-03164-1025x683-27c3a53.jpg",
       "duration": "30",
-      "calories": "60",
-      "date": "2025-05-17",
-      "notes": "Sit up workout for 30 minutes",
+      "calories": "200",
+      "date": "2025-05-14",
+      "notes": "Stay health",
       "completed": true
+    },
+    {
+      "id": "865e",
+      "exercise": "Jogging",
+      "img": "https://avidsportsmed.com/wp-content/uploads/2023/11/Jogging.png",
+      "duration": "1.5",
+      "calories": "350",
+      "date": "2025-05-31",
+      "notes": "Happy jogging :)",
+      "completed": false
     }
   ]
 }

@@ -7,12 +7,12 @@ const AddPlans = () => {
 
   const [plansData, setPlansData] = useState({
     exercise: "",
-    img:"",
+    img: "",
     duration: "",
     calories: "",
     date: "",
     notes: "",
-    completed: false
+    completed: false,
   });
 
   const handleClose = () => setShow(false);
@@ -41,17 +41,15 @@ const AddPlans = () => {
   return (
     <>
       <div className="container addPlan-div d-flex flex-column">
-        <h3 className="text-center mt-5 fw-bolder">
-        Add Workout Plans
-      </h3>
-      <div className="d-flex justify-content-center">
-        <button
-          className="btn btn-primary border my-3 fw-bolder fs-5"
-          onClick={handleShow}
-        >
-          Add
-        </button>
-      </div>
+        <h3 className="text-center mt-5 fw-bolder">Add Workout Plans</h3>
+        <div className="d-flex justify-content-center">
+          <button
+            className="btn btn-primary border my-3 fw-bolder fs-5"
+            onClick={handleShow}
+          >
+            Add
+          </button>
+        </div>
       </div>
 
       <Modal
@@ -62,7 +60,7 @@ const AddPlans = () => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title className="fw-bolder text-success">
+          <Modal.Title className="fw-bolder text-primary">
             Add new Workout Plan
           </Modal.Title>
         </Modal.Header>
